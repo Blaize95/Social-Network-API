@@ -16,7 +16,6 @@ router.route('/').get(getAllUsers).post(createNewUser);
 router.route('/:userId').get(getOneUserById).put(updateUser).delete(deleteUser);
 
 // insert details about the url here
-// There is an error with this line of code - working on fix
 router.route('/:userId/friends/:friendId').post(addUserFriend).delete(deleteUserFriend);
 
 module.exports = router;
